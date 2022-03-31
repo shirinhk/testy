@@ -1,0 +1,61 @@
+#portfolio-items {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-top: 100px;
+  width: 80%;
+}
+
+.portfolio-items {
+  padding: 0 5px 20px 5px;
+  width: 400px;
+}
+
+.thumb-img {
+  width: 100%;
+  margin: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.thumb-img:hover {
+  transform: scale(1.1);
+}
+
+.p-items {
+  animation-timing-function: linear;
+  animation: thumb-move 5s;
+  position: relative;
+}
+
+@keyframes thumb-move {
+  from {
+    bottom: -150px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+
+.p_name {
+  animation: thumb-appear 20s;
+  margin-bottom: 7px;
+  font-family: $font-main;
+}
+
+.p-description {
+  animation: thumb-appear 25s;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: $active;
+}
+
+@keyframes thumb-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

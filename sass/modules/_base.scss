@@ -1,0 +1,59 @@
+html {
+  max-width: 1920px;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  font-family: $font-highlight;
+  color: $color-headlines;
+  background-color: $color-backgrounds;
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+h1,
+h2 {
+  font-family: $font-main;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h3 {
+  font-family: $font-main;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+i {
+  color: $color-headlines;
+}
+
+.active {
+  color: $active;
+}

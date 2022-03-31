@@ -1,0 +1,119 @@
+.lightbox {
+  display: none !important;
+  background-color: rgba(147, 29, 177, 0.3);
+  padding: 20px;
+}
+
+.visible {
+  display: block !important;
+}
+
+.slideshow-container {
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+}
+
+.slides {
+  display: none;
+}
+
+#slide-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.slide-pic {
+  width: 650px;
+  margin-top: 10px;
+  -webkit-filter: drop-shadow(5px 5px 5px #000);
+  filter: drop-shadow(5px 5px 5px #000);
+}
+
+.video {
+  width: 650px;
+  margin-top: 10px;
+}
+
+.title {
+  width: 40%;
+  animation-timing-function: linear;
+  animation: title-move 5s;
+  position: relative;
+  margin-left: 30px;
+}
+
+@keyframes title-move {
+  from {
+    right: -150px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+.slide-title {
+  padding: 50px 0 40px 0;
+  color: $active;
+}
+
+.p-info {
+  line-height: 30px;
+}
+
+.close {
+  margin-left: 50px;
+  opacity: 0.5;
+}
+
+.left,
+.right {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: $active;
+  font-weight: bold;
+  font-size: 32px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.right {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.left {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
